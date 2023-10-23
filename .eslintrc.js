@@ -9,7 +9,7 @@ module.exports = {
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-    'import/parsers': {'@typescript-eslint/parser': ['.ts', '.tsx']},
+    'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
     'import/resolver': {
       typescript: {},
       alias: {
@@ -39,18 +39,18 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {jsx: true},
+    ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  env: {jest: true, 'react-native/react-native': true},
+  env: { jest: true, 'react-native/react-native': true },
   rules: {
     'no-use-before-define': 'off',
     'react/jsx-filename-extension': 'off',
     'react/prop-types': 'off',
     'comma-dangle': 'off',
     'padded-blocks': 'off',
-    'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react-native/no-inline-styles': 0,
@@ -87,19 +87,19 @@ module.exports = {
     'no-param-reassign': 0,
     '@typescript-eslint/no-explicit-any': 'off',
     'no-restricted-syntax': 'off',
-    'react/no-unstable-nested-components': ['off', {allowAsProps: true}],
+    'react/no-unstable-nested-components': ['off', { allowAsProps: true }],
     'arrow-parens': ['error', 'always'],
     'no-nested-ternary': 'off',
     indent: 'off',
     'operator-linebreak': [
       1,
       'after',
-      {overrides: {'?': 'ignore', ':': 'ignore'}},
+      { overrides: { '?': 'ignore', ':': 'ignore' } },
     ],
     'import/extensions': [
       'error',
       'ignorePackages',
-      {ts: 'never', tsx: 'never', js: 'never', jsx: 'never', mjs: 'never'},
+      { ts: 'never', tsx: 'never', js: 'never', jsx: 'never', mjs: 'never' },
     ],
   },
   globals: {
